@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Onkar Shrikant Ekkaldevi - Digital Portfolio</title>
+ <link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html, body {
+ height: 100%;
+ font-family: 'Montserrat', sans-serif;
+ color: #fff;
+ scroll-behavior: smooth;
+ }
+ nav {
+ background-color: rgba(0, 0, 0, 0.7);
+ padding: 15px 30px;
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 1000;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .logo {
+ font-size: 26px;
+ color: #fff;
+ font-weight: 700;
+ }
+ .menu a {
+ color: #fff;
+ text-decoration: none;
+ margin-left: 25px;
+ font-size: 18px;
+ font-weight: 600;
+ transition: color 0.3s;
+ }
+ .menu a:hover {
+ color: #ffd700;
+ }
+ section {
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ background-size: cover;
+ background-position: center;
+ }
+ section::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0;
+ width: 100%; height: 100%;
+ background: rgba(0, 0, 0, 0.6);
+ z-index: 1;
+ }
+ .section-content {
+ position: relative;
+ z-index: 2;
+ text-align: center;
+ background-color: rgba(255, 255, 255, 0.1);
+ padding: 40px;
+ border-radius: 15px;
+ width: 85%;
+ max-width: 1000px;
+ }
+ h1, h2 {
+ font-size: 36px;
+ font-weight: 700;
+ margin-bottom: 20px;
+ }
+ ul, p {
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 1.8;
+ }
+ ul {
+ list-style-type: none;
+ padding-left: 0;
+ text-align: left;
+ }
+ #home {
+ background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80');
+ }
+ #education {
+ background-image: url('https://images.unsplash.com/photo-1584697964154-0d0ef2a2fbee?auto=format&fit=crop&w=1600&q=80');
+ }
+ #projects {
+ background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80');
+ }
+ #contact {
+ background-image: url('https://images.unsplash.com/photo-1518887576874-7a9af66a1ef1?auto=format&fit=crop&w=1600&q=80');
+ }
+ #skills {
+ background-image: url('https://images.unsplash.com/photo-1584697964154-0d0ef2a2fbee?auto=format&fit=crop&w=1600&q=80');
+ }
+ footer {
+ background-color: #111;
+ color: white;
+ text-align: center;
+ padding: 20px 0;
+ font-weight: 600;
+ }
+ @media (max-width: 768px) {
+ nav {
+ flex-direction: column;
+ align-items: flex-start;
+ }
+ .menu a {
+ display: block;
+ margin: 10px 0;
+ }
+ .section-content {
+ width: 95%;
+ padding: 20px;
+ }
+ }
+ </style>
+</head>
+<body>
+ <nav>
+ <div class="logo">Portfolia</div>
+ <div class="menu">
+ <a href="#home">Home</a>
+ <a href="#education">Education</a>
+ <a href="#skills">Skills</a>
+ <a href="#projects">Projects</a>
+ <a href="#contact">Contact</a>
+ 
+ </div>
+ </nav>
+ <!-- Home Section -->
+ <section id="home">
+ <div class="section-content">
+ <h1>I am Onkar Shrikant Ekkaldevi</h1>
+ <p>A Computer Engineering Student</p>
+ </div>
+ </section>
+ <!-- Education Section -->
+ <section id="education">
+ <div class="section-content">
+ <h2>Education</h2>
+ <ul>
+ <li><strong>Diploma in Computer Science</strong> – Government
+Polytechnic College (Currently Studying, 1st Year)</li>
+ <li><strong>10th (SSC)</strong> – Precision English Medium
+School</li>
+ </ul>
+ </div>
+ </section>
+ <!-- Skills Section -->
+ <section id="skills">
+    <div class="section-content">
+    <h2>Skills</h2>
+    <ul>
+        <li> - Good at professional communication</li>
+        <li> - Basic coding knowledge</li>        
+        <li> - Quick learner and adaptable</li>
+        <li> - Team player with a responsible attitude</li>
+        <li> - Problem-solving mindset</li>
+    </ul>
+    </div>
+    </section>
+ <!-- Projects Section -->
+ <section id="projects">
+ <div class="section-content">
+ <h2>Projects</h2>
+ <ul>
+ <li><strong> - Contact Management System:</strong> A micro-project
+developed using C language as part of coursework at Government Polytechnic,
+Solapur. It allows users to store, update, search, and delete contact details
+through a simple console-based interface.</li>
+<li><strong> - Portfolio:</strong> Created my own portfolia and hosted it using github.</li>
+ </ul>
+ </div>
+ </section>
+ <!-- Contact Section -->
+ <section id="contact">
+ <div class="section-content">
+ <h2>Contact</h2>
+ <ul>
+ <li><strong>Phone:</strong> +91 7498123577</li>
+ <li><strong>Email:</strong>onkarekkaldevi@gmail.com</li>
+ </ul>
+ <p style="text-align: left;">I am passionate about learning and growing in the field of computer
+engineering.</p>
+ </div>
+ </section>
+ <footer>
+ <p>&copy; 2025 Onkar Shrikant Ekkaldevi. All rights reserved.</p>
+ </footer>
+</body>
+</html>
